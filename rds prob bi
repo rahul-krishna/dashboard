@@ -1,0 +1,5 @@
+
+SELECT COUNT(customer_id) FROM warehouse.dwh_customer_statuses_nz
+WHERE hellofresh_week = '2019-W48'
+AND previous_status = 'active'
+AND status in ('user_paused','interval_paused','canceled');
